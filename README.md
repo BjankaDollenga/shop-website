@@ -1,7 +1,7 @@
 # PROJECT
 
 A simple landing page using **HTML**, **CSS**, and **JavaScript**, featuring a hero banner, responsive nav, product slider, and a product showcase.  
-Live at: https://example.com
+Live at: https://bjankadollenga.github.io/shop-website/
 
 ## Structure
 
