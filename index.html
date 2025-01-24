@@ -11,13 +11,21 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- PROMO BANNER -->
     <div class="promo-banner" role="banner">
       <p>Use this banner to advertise a special promotion - 20% off!</p>
     </div>
+
+    <!-- MAIN NAVIGATION -->
     <header class="main-header">
       <nav aria-label="Main navigation">
+        <!-- TOP NAVIGATION -->
         <div class="top-nav">
           <ul class="utility-nav">
             <li><a href="#">STITCH REWARDS</a></li>
@@ -50,6 +58,8 @@
             </li>
           </ul>
         </div>
+
+        <!-- CATEGORY NAVIGATION -->
         <div class="category-nav">
           <img
             class="category-nav-logo"
@@ -108,7 +118,10 @@
         </div>
       </nav>
     </header>
+
+    <!-- MAIN CONTENT -->
     <main>
+      <!-- HERO SECTION -->
       <section class="hero" aria-labelledby="hero-heading">
         <img
           src="./images/hero.jpg"
@@ -119,68 +132,144 @@
           <button class="cta-button">Shop Now</button>
         </div>
       </section>
+
+      <!-- TOP PRODUCTS -->
       <section class="top-products" aria-labelledby="top-products-heading">
         <h2 id="top-products-heading" class="visually-hidden">Top Products</h2>
-        <div class="product-grid">
-          <article class="product-card">
+        <div class="slider-nav-container">
+          <button class="slider-nav prev" aria-label="Next slide">
             <img
-              src="./images/top-products/product-1.jpg"
-              alt="GLIDE embroidery thread spool"
+              src="./images/icons/arrow-left.svg"
+              alt="Arrow left icon"
+              width="20"
+              height="20"
             />
-            <h3>GLIDE Thread</h3>
-          </article>
-          <article class="product-card">
+          </button>
+          <button class="slider-nav next" aria-label="Next slide">
             <img
-              src="./images/top-products/product-2.jpg"
-              alt="Magnetic core bobbin for sewing machines"
+              src="./images/icons/arrow-right.svg"
+              alt="Arrow left icon"
+              width="20"
+              height="20"
             />
-            <h3>Magnetic Core Bobbin</h3>
-          </article>
-          <article class="product-card">
-            <img
-              src="./images/top-products/product-3.jpg"
-              alt="Premium embroidery stabilizer roll"
-            />
-            <h3>Premium Stabilizer</h3>
-          </article>
+          </button>
+        </div>
+
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <a href="#" class="slide">
+              <article class="product-card">
+                <img
+                  src="./images/top-products/product-1.jpg"
+                  alt="GLIDE embroidery thread spool"
+                />
+                <h3>GLIDE Thread</h3>
+              </article>
+            </a>
+            <a href="#" class="slide">
+              <article class="product-card">
+                <img
+                  src="./images/top-products/product-2.jpg"
+                  alt="Magnetic core bobbin for sewing machines"
+                />
+                <h3>Magnetic Core Bobbin</h3>
+              </article>
+            </a>
+            <a href="#" class="slide">
+              <article class="product-card">
+                <img
+                  src="./images/top-products/product-3.jpg"
+                  alt="Premium embroidery stabilizer roll"
+                />
+                <h3>Premium Stabilizer</h3>
+              </article>
+            </a>
+            <a href="#" class="slide">
+              <article class="product-card">
+                <img
+                  src="./images/top-products/product-4.jpg"
+                  alt="High-Quality Embroidery Thread"
+                />
+                <h3>High-Quality Thread</h3>
+              </article>
+            </a>
+            <a href="#" class="slide">
+              <article class="product-card">
+                <img
+                  src="./images/top-products/product-5.jpg"
+                  alt="Durable Embroidery Bobbin"
+                />
+                <h3>Durable Bobbin</h3>
+              </article>
+            </a>
+            <a href="#" class="slide">
+              <article class="product-card">
+                <img
+                  src="./images/top-products/product-6.jpg"
+                  alt="Top-Notch Embroidery Needle"
+                />
+                <h3>Top-Notch Needle</h3>
+              </article>
+            </a>
+            <a href="#" class="slide">
+              <article class="product-card">
+                <img
+                  src="./images/top-products/product-7.jpg"
+                  alt="Ultimate Embroidery Kit"
+                />
+                <h3>Ultimate Kit</h3>
+              </article>
+            </a>
+          </div>
         </div>
       </section>
+
+      <!-- FEATURED PRODUCTS -->
       <section
         class="featured-products"
         aria-labelledby="featured-products-heading"
       >
         <h2 id="featured-products-heading">Featured Products</h2>
         <div class="product-grid">
-          <article class="product-card">
-            <img
-              src="./images/featured-products/product-1.jpg"
-              alt="Embroidery stabilizer for delicate fabrics"
-            />
-            <h3>Embroidery Stabilizer</h3>
-          </article>
-          <article class="product-card">
-            <img
-              src="./images/featured-products/product-2.jpg"
-              alt="Cubbie Grey Elephant embroidery kit"
-            />
-            <h3>Cubbie Grey Elephant</h3>
-          </article>
-          <article class="product-card">
-            <img
-              src="./images/featured-products/product-3.jpg"
-              alt="Kimberbell Cup of Cheer embroidery pattern"
-            />
-            <h3>Kimberbell Cup of Cheer</h3>
-          </article>
-          <article class="product-card">
-            <img
-              src="./images/featured-products/product-4.jpg"
-              alt="Kimberbell Two Scoops embroidery design"
-            />
-            <h3>Kimberbell Two Scoops</h3>
-          </article>
+          <a href="#">
+            <article class="product-card">
+              <img
+                src="./images/featured-products/product-1.jpg"
+                alt="Embroidery stabilizer for delicate fabrics"
+              />
+              <h3>Embroidery Stabilizer</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="product-card">
+              <img
+                src="./images/featured-products/product-2.jpg"
+                alt="Cubbie Grey Elephant embroidery kit"
+              />
+              <h3>Cubbie Grey Elephant</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="product-card">
+              <img
+                src="./images/featured-products/product-3.jpg"
+                alt="Kimberbell Cup of Cheer embroidery pattern"
+              />
+              <h3>Kimberbell Cup of Cheer</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="product-card">
+              <img
+                src="./images/featured-products/product-4.jpg"
+                alt="Kimberbell Two Scoops embroidery design"
+              />
+              <h3>Kimberbell Two Scoops</h3>
+            </article>
+          </a>
         </div>
       </section>
     </main>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
