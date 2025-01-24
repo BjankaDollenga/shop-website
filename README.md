@@ -21,3 +21,17 @@ Live at: https://bjankadollenga.github.io/shop-website/
 
 - **index.html**  
   The main landing page that ties everything together.
+
+# Project Screenshots
+
+## Desktop Screenshot
+
+![Desktop Screenshot](Screenshots/DesktopScreenshot.jpg)
+
+## Phone Screenshot
+
+![Phone Screenshot](Screenshots/PhoneScreenshot.jpg)
+
+## Tablet Screenshot
+
+![Tablet Screenshot](Screenshots/TabletScreenshot.jpg)
