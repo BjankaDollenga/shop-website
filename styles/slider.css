@@ -45,7 +45,15 @@
   filter: brightness(0.5);
 }
 
-@media (min-width: 640px) {
+.slider-container {
+  padding: 0 24px;
+}
+
+.slider-nav-container {
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
   .slide {
     flex: 0 0 calc(50% - 16px);
   }

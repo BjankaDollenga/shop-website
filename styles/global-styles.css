@@ -44,3 +44,21 @@ hr {
   border: 0;
   border-top: 1px solid #e5e7eb;
 }
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}

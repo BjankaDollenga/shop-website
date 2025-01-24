@@ -1,5 +1,5 @@
-@import url('./global-styles.css');
-@import url('./slider.css');
+@import url("./global-styles.css");
+@import url("./slider.css");
 
 .promo-banner {
   background: #000;
@@ -17,7 +17,8 @@
 }
 
 .main-header li:hover {
-  text-decoration: underline;
+  text-decoration: underline wavy;
+  transition: all 0.3s ease-out;
 }
 
 .top-nav {
@@ -37,9 +38,10 @@
 .user-nav {
   display: flex;
   gap: 16px;
+  padding: 4px 0;
 }
 
-.utility-nav a{
+.utility-nav a {
   display: flex;
   flex-direction: row;
   column-gap: 2px;
@@ -50,8 +52,15 @@
   padding-right: 16px;
 }
 
-.category-nav-logo, .category-nav-filler {
-  width: 174px;
+.category-nav-filler {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.category-nav-logo,
+.category-nav-filler {
+  width: 157px;
   height: 72px;
 }
 
@@ -103,14 +112,14 @@
   align-items: end;
 }
 
-
 #hero-heading {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 42px;
 }
 
 #hero-heading span {
-  margin-top: -18px;
   text-align: end;
   display: block;
 }
@@ -119,8 +128,16 @@
   background: transparent;
   border: 1px #fff solid;
   color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   padding: 8px 16px;
   margin-top: 16px;
+}
+
+.cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-out;
+  transform: scale(0.97);
+  will-change: background-color, transform;
 }
 
 .product-grid {
@@ -153,12 +170,12 @@
 
 .top-products a:hover h3,
 .featured-products a:hover h3 {
-  text-decoration: underline;
+  text-decoration: underline wavy;
 }
 
 .top-products .product-grid {
   gap: 32px;
-  padding: 0 32px; 
+  padding: 0 32px;
 }
 
 .top-products .product-card {
@@ -178,7 +195,7 @@
 }
 
 .featured-products {
-  padding: 64px 72px;
+  padding: 64px 24px;
 }
 
 .featured-products h2 {
@@ -193,7 +210,7 @@
 }
 
 .featured-products .product-card img {
-  box-shadow: 0px 2px 7px 0px rgba(247,247,247,1);
+  box-shadow: 0px 2px 7px 0px rgba(247, 247, 247, 1);
   text-align: center;
   width: 100%;
 }
@@ -208,4 +225,128 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+@media (max-width: 768px) {
+  .top-nav,
+  .category-nav ul {
+    display: none;
+  }
+
+  .category-nav {
+    padding: 0 24px;
+    height: 72px;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+
+  .hamburger-bar {
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger-bar:nth-child(1) {
+    top: 5px;
+  }
+
+  .hamburger-bar:nth-child(2) {
+    top: 13px;
+    width: 16px;
+    left: auto;
+    right: 0;
+  }
+
+  .hamburger-btn.active .hamburger-bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+
+  .hamburger-btn.active .hamburger-bar:nth-child(2) {
+    transform: rotate(-45deg);
+    width: 24px;
+    left: 0;
+    top: 11px;
+  }
+
+  .hamburger-btn.active .hamburger-bar {
+    background: #000;
+  }
+
+  .hamburger-btn {
+    margin-left: 16px;
+  }
+
+  .mobile-menu-active .top-nav,
+  .mobile-menu-active .category-nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 105px;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 100;
+    padding: 16px 24px;
+  }
+
+  .mobile-menu-active .top-nav {
+    border-bottom: none;
+  }
+
+  .utility-nav,
+  .user-nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .user-nav li:first-child {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-content {
+    width: 100%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: block;
+  }
+
+  #hero-heading span {
+    text-align: center;
+  }
+
+  #hero-heading span {
+    margin-top: 0px;
+    text-align: center;
+    display: block;
+  }
+
+  #hero-heading {
+    font-size: 32px;
+  }
+
+  .featured-products {
+    padding: 32px 24px;
+  }
+
+  .featured-products .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
 }
